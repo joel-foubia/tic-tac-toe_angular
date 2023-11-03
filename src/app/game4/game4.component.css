@@ -1,0 +1,25 @@
+h1{
+    color: tomato;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.board div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100px;
+    background-color: lightslategray;
+    font-size: 48px;
+}
+
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+}

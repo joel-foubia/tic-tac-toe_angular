@@ -1,0 +1,9 @@
+<div id="statusArea" className="status">Next player: <span>{{toggled ? "O" : "X"}}</span></div>
+<div id="winnerArea" className="winner">Winner: <span>{{winner}}</span></div>
+<button (click)="reset()">Reset</button>
+<section>
+    <div class="row" *ngFor="let row of [0, 1, 2]">
+        <button *ngFor="let col of [0, 1, 2]" class="square" style="width:40px;height:40px;"
+            (click)=nextPlayer(row,col);>{{board[row][col]}}</button>
+    </div>
+</section>

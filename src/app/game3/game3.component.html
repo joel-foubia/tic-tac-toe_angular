@@ -1,0 +1,8 @@
+<h1>Tic Tac Toe</h1>
+<span *ngIf="winner">The winner is {{winner}}</span>
+<div class="board">
+    <div *ngFor="let cell of cells; let i = index" (click)="makeChanges(i)">
+        {{cell}}
+    </div>
+</div>
+<button (click)="reset()">Reset</button>
